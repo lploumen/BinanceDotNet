@@ -207,8 +207,8 @@ namespace BinanceExchange.API.Websockets
                             userDataWebSocketMessages.OrderUpdateMessageHandler?.Invoke(orderTradeData);
                         }
                         break;
-                    default:
-                        throw new ArgumentOutOfRangeException();
+                    //default:
+                        //throw new ArgumentOutOfRangeException();
                 }
             };
             websocket.OnError += (sender, e) =>
