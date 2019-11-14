@@ -45,6 +45,9 @@ namespace BinanceExchange.API.Models.WebSocket
         [JsonProperty(PropertyName = "q")]
         public decimal Quantity { get; set; }
 
+        [JsonProperty(PropertyName = "Q")]
+        public decimal QuoteOrderQty { get; set; }
+
         [JsonProperty(PropertyName = "p")]
         public decimal Price { get; set; }
 
